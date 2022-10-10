@@ -1,0 +1,122 @@
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+    
+
+.flex-container{
+    display: flex;
+    text-align: left;
+}
+
+.main{
+    margin: auto 100px;
+    padding: 10px;
+    height: 100%;
+}
+
+
+.container{ 
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(260px 300px) minmax(240px 300px);
+    gap: 20px;
+    min-width: 375px;
+    max-width: 1440px;
+    width: 100%;
+   
+}
+
+.daniel{
+    grid-column:1/3 ;
+    grid-row: 1;
+    background: url('images/bg-pattern-quotation.svg') no-repeat 90% 0%,hsl(263, 55%, 52%);
+}
+    
+.jonathan{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: hsl(217, 19%, 35%)
+    ;
+}
+
+.jona{
+    text-align: left;
+    margin-left: 15px;
+}
+.kira{
+    grid-column: 4/5;
+    grid-row: 1/3;
+   background-color:  hsl(0, 0%, 100%);
+}
+
+.jeanette{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+
+
+.patrick{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: hsl(219, 29%, 14%)
+    ;
+}
+
+p{
+    color: hsl(0, 0%, 81%)
+    ;
+}
+
+.box{
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+
+h3{
+    color: #fafafa;
+}
+
+
+
+.darker{
+    color: hsl(217, 19%, 35%);
+}
+
+.dark{
+    color: #949191;
+}
+
+.name{
+    color: #a3a0a0;
+}
+
+.boys{
+    color: #e3e1e1;
+}
+
+img{
+    border-radius: 50%;
+}
+
+@media screen and (max-width:600px) {
+
+    .container {
+        width:85%;
+        display: flex;
+        flex-flow: column;
+        gap:1.5em;
+    }
+
+    .box {
+    padding: 20px;
+    }
+}
